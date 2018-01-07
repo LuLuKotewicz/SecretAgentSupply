@@ -3,32 +3,27 @@ html {
   font-size: 18px;
 }
 
-.main-container {
-  display: flex;
-  flex-direction: column;
-}
-
-header {
-  background-color: #000;
-  padding: 0.66rem 0;
-  display: flex;
-  flex-direction: row;
+.container {
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .name {
-  width: 960px;
+  background-color: #000;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+.name .container {
   display: flex;
   align-items: center;
+  padding: 12px 0 12px 0.5em;
 }
 
-.logo {
-  margin-left: 0.5rem;
-  display: inline-flex;
-}
-
-.logo img {
+.name img {
   height: 1.5rem;
   width: auto;
+  padding-right: 1rem;
 }
 
 .title {
@@ -45,19 +40,15 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  display: flex;
-  flex-direction: column;
 }
 
 .intro {
   background-color: #000;
   color: #FFF;
   width: 20rem;
-  display: inline-flex;
-  flex-direction: column;
-  align-content: center;
-  margin-top: 9rem;
-  padding: 3rem 2rem;
+  top: 9rem;
+  padding: 2rem 3rem;
+  position: relative;
 }
 
 .intro h3 {
@@ -73,37 +64,44 @@ header {
   margin-top: 0.25rem;
 }
 
-.nav-bar {
+nav {
   background-color: firebrick;
-  padding: 0.75rem 0;
-  display: flex;
-  justify-content: space-around;
+  color: #FFF;
 }
 
-.nav-bar div a {
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75em 0;
+}
+
+nav ul li a {
   color: #FFF;
   text-decoration: none;
-  display: inline-flex;
 }
 
 .product-grid {
   margin: 3rem 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .product {
-  border: 4px solid #000;
   width: 30%;
+}
+
+.product-image {
+  border: 4px solid #000;
+  height: 9rem;
+  padding: 2rem 0;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.product img {
-  height: 9rem;
-  width: auto;
-  padding: 2rem;
+.product-image img {
+  max-width: 60%;
 }
 
 .product-name {
@@ -116,4 +114,28 @@ header {
 
 .product-name h4 {
   color: #FFF;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0 0 0;
+}
+
+.contact-info {
+  width: 35%;
+}
+
+.contact-info .location {
+  background-color: #000;
+  padding: 1rem 2rem;
+  display: block;
+  color: #FFF;
+}
+
+footer {
+  background-color: #000;
+  margin-top: 4rem;
+  color: #FFF;
+  padding: 5rem 0;
 }
