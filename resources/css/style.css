@@ -5,6 +5,8 @@ html {
 
 .main-container {
   width: 960px;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -12,6 +14,11 @@ header {
   padding: 0.66rem 0;
   display: flex;
   flex-direction: row;
+}
+
+.name {
+  width: 960px;
+  display: flex;
 }
 
 .logo {
@@ -31,11 +38,12 @@ header {
 
 .main-banner {
   height: 25rem;
-  background: url(./resources/images/moto.jpeg);
+  background: url("../images/moto.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
 }
 
 .intro {
@@ -44,14 +52,15 @@ header {
   width: 20rem;
   display: inline-flex;
   flex-direction: column;
+  align-content: center;
+  margin-top: 9rem;
+  padding: 3rem 2rem;
 }
 
 .intro h3 {
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 2rem;
-  margin-left: 3rem;
 }
 
 .intro h2 {
@@ -59,23 +68,25 @@ header {
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 0.25rem;
-  margin-left: 3rem;
 }
 
 .nav-bar {
   background-color: firebrick;
   padding: 0.75rem 0;
   display: flex;
+  justify-content: space-around;
 }
 
-.nav-bar ul li{
+.nav-bar div a {
   color: #FFF;
+  text-decoration: none;
   display: inline-flex;
 }
 
 .product-grid {
   margin-top: 3rem;
   display: flex;
+  justify-content: space-around;
 }
 
 .product {
